@@ -1,0 +1,13 @@
+
+[
+    {
+        "url": "http://127.0.0.1:8000/surveys/1/",
+        "name": "Survey 1",
+        "description": "Survey 1 description"
+    },
+    {
+        "url": "http://127.0.0.1:8000/surveys/2/",
+        "name": "survey 2",
+        "description": "Survey 2 description"
+    }
+]
