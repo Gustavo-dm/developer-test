@@ -29,7 +29,8 @@
 ### Content-Type: application/json
 ### Vary: Accept
 ---
-```json[
+```json
+[
     {
         "url": "http://127.0.0.1:8000/survey-question/1/",
         "survey_question_text": "Survey question 1",
@@ -58,7 +59,8 @@
 
 ---
 
-```json[
+```json
+[
     {
         "url": "http://127.0.0.1:8000/surveys-alternative/1/",
         "survey_question_alternative_text": "1",
@@ -72,4 +74,19 @@
         "survey_question": "http://127.0.0.1:8000/survey-question/1/"
     }
 ]
+```
+
+## GET /
+### HTTP 200 OK
+### Allow: GET, HEAD, OPTIONS
+### Content-Type: application/json
+### Vary: Accept
+---
+```json
+{
+    "surveys": "http://127.0.0.1:8000/surveys/",
+    "survey-question": "http://127.0.0.1:8000/survey-question/",
+    "surveys-alternative": "http://127.0.0.1:8000/surveys-alternative/",
+    "surveys-answers": "http://127.0.0.1:8000/surveys-answers/"
+}
 ```
