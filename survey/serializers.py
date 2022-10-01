@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.contrib.auth.models import User
 
 from .models import Survey, SurveyQuestion, SurveyQuestionAlternative, SurveyUserAnswer
 
@@ -17,7 +18,8 @@ class SurveyQuestionAlternativeSerializer(serializers.HyperlinkedModelSerializer
         model = SurveyQuestionAlternative
         fields = ('__all__')
 
-class SurveyUserAnswerSerializer(serializers.HyperlinkedModelSerializer):
+class SurveyUserAnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = SurveyUserAnswer
         fields = ('__all__')
+
