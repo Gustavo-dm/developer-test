@@ -90,3 +90,27 @@
     "surveys-answers": "http://127.0.0.1:8000/surveys-answers/"
 }
 ```
+---
+## GET /surveys-answers/
+### HTTP 200 OK
+### Allow: GET, POST, HEAD, OPTIONS
+### Content-Type: application/json
+### Vary: Accept
+```json
+[
+    {
+        "id": 1,
+        "user": 2,
+        "survey": 1,
+        "survey_question": 1,
+        "survey_question_alternative": 1
+    },
+    {
+        "id": 2,
+        "user": 2,
+        "survey": 1,
+        "survey_question": 1,
+        "survey_question_alternative": 1
+    }
+]
+```
