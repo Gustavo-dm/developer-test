@@ -18,4 +18,4 @@ class SurveyQuestionAlternativeViewSet(viewsets.ModelViewSet):
 
 class SurveyUserAnswerViewSet(viewsets.ModelViewSet):
     queryset = SurveyUserAnswer.objects.all()
-    serializer_class = SurveyUserAnswerSerializer
+    serializer_class = SurveyUserAnswerSerializer   
